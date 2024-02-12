@@ -70,7 +70,7 @@ h1 {
     top: 10px;
 }
 
-/* Mobile Styles */
+/* Mobile Style */
 @media screen and (max-width: 600px) {
     body {
         text-align: center;
