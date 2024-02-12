@@ -1,4 +1,147 @@
-.bacon-photos {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: "Inter";
+    background-color: #ffe2e6;
+    margin: 7%;
+    font-size: 20px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+h1, h2, h3 {
+    text-align: center;
+    padding: 2%;
+    font-size: 40px;
+}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav > ul > li {
+    float: left;
+    display: block;
+    padding: 1rem;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+li {
+    margin-top: 6px;
+    display: list-item;
+    margin-left: 0;
+    font-size: 18px;
+}
+
+nav > ul > li.active {
+    background-color: #fff;
+}
+
+h1 { 
+    margin: 2rem;
+    font-size: large;
+}
+
+.skip-to-main {
+    position: absolute;
+    top: -500px;
+}
+
+.skip-to-main:focus {
+    top: 10px;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 600px) {
+    body {
+        text-align: center;
+        font-size: 16px;
+        margin: 5%;
+    }
+    .skip-to-main {
+        position: relative;
+        text-align: left;
+        top: -600px;
+    }
+
+    img {
+        margin: 8px 4px;
+        border-radius: 8px;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    ul {
+        margin-left: 12px;
+        list-style-type: circle;
+        padding-left: 24px;
+    }
+
+    li {
+        margin-top: 6px;
+        display: list-item;
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    nav {
+        text-align: right;
+    }
+
+    nav > ul > li {
+        margin: 8px 0;
+        font-size: 18px;
+    }
+
+    body > a {
+        display: inline-block;
+        margin: 12px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .gallery,
+    .gallery_food {
+        display: grid;
+        grid-gap: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery_food {
+        grid-template-columns: 1fr;
+    }
 }

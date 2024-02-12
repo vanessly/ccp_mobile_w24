@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Pets</title>
 </head>
 <body>
-    <a href = "#main">Skip to Main Content</a>
+    <a href="#main" class="skip-to-main" tabindex="1">Skip to Main Content</a>
     <header>
         <nav>
             <ul>
-                <li><a href = "index.html">Home</a></li>
+                <li class="active"><a href = "index.html">Home</a></li>
                 <li><a href="pets.html">Pets</a></li>
                 <li><a href="recipes.html">Recipes</a></li>
                 <li><a href="travel.html">Travel</a></li>
@@ -24,7 +26,6 @@
         </div>
         <div>
             <h2 id="main">About the Author</h2>
-            <img src="images/headshot.png" width="400" alt="CC Ly headshot">
             <ul>
                 <li><b>Name</b>: CC Ly</li>
                 <li><b>Year</b>: Junior</li>
@@ -33,10 +34,11 @@
             </ul>
         </div>
         <div>
-            <h3>Pictures of my Cat</h3>
-            <img src="images/IMG_1252.HEIC" width="200" alt="Gertrude the cat">
-            <img src="images/IMG_20220825_194553_01_Original.jpg" width="200" alt="Gertrude the cat">
-            <img src="images/IMG_7268_Original.jpg" width="200" alt="Gertrude the cat">
+            <h3> Pictures of my Cat</h3>
+            <div class="gallery">
+                <img src="images/IMG_20220825_194553_01_Original.jpg" width = "200" alt="Gertrude the cat">
+                <img src="images/IMG_7268_Original.jpg" width = "200" alt="Gertrude the cat">
+            </div>
             <ul>
                 <li><b>Name</b>: Gertrude</li>
                 <li><b>Year</b>: 16</li>
